@@ -4,7 +4,7 @@
         infinite
         arrows
         v-model="slide"
-        height="500px"
+        height="460px"
         :autoplay="autoplay"
         transition-prev="slide-right"
         transition-next="slide-left"

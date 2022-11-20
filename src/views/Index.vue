@@ -1,10 +1,12 @@
 <template>
   <Carousel />
+  <EstudioJuridicos />
 </template>
 
 <script setup>
 import { ref } from 'vue'
 import Carousel from '../components/carousel.vue';
+import EstudioJuridicos from '../components/estudioJuridicos.vue';
 </script>
 
 
