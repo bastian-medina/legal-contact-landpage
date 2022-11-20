@@ -2,7 +2,7 @@
   <q-footer reveal bordered class="bg-grey-6 text-white">
     <q-toolbar class="bg-grey-6 text-white">
       
-      <q-btn-dropdown stretch flat label="Contactos">
+      <q-btn-dropdown stretch flat label="Contactos" class="mobile-hide">
         <q-list>
 
 
@@ -35,7 +35,7 @@
 
       <q-space />
 
-      <q-list dark separator style="max-width: 318px">
+      <q-list dark separator style="max-width: 318px" class="mobile-hide">
         <q-item v-ripple>
           <q-item-section>
             <q-item-label>Horarios de atención:</q-item-label>
@@ -46,7 +46,7 @@
       </q-list>
 
       <q-space/>
-      <q-list dark separator style="max-width: 318px">
+      <q-list dark separator style="max-width: 318px" class="mobile-hide">
         <q-item v-ripple>
           <q-item-section>
             <q-item-label>Dirección:</q-item-label>
