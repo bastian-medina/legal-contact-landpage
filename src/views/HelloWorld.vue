@@ -11,6 +11,12 @@ const count = ref(0)
 <template>
   <h1>{{ msg }}</h1>
 
+  <q-card class="my-card">
+      <q-card-section>
+        {{ lorem }}
+      </q-card-section>
+  </q-card>
+
   <div class="card">
     <button type="button" @click="count++">count is {{ count }}</button>
     <p>
