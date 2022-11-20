@@ -1,20 +1,18 @@
 <template>
-      <q-header elevated>
-        <q-toolbar>
-          <q-btn flat round dense icon="menu" class="q-mr-sm" />
+      <q-header elevated class="bg-purple">
+        <q-toolbar dense align="justify">
           <q-avatar>
-            <img src="https://cdn.quasar.dev/logo-v2/svg/logo-mono-white.svg">
+            <img src="../../../public/home.svg">
           </q-avatar>
 
-          <q-toolbar-title>Quasar Framework</q-toolbar-title>
-
-          <q-btn flat round dense icon="whatshot" />
+          <q-toolbar-title>Abogados Santiago - Bufete de Abogados Santiago</q-toolbar-title>
         </q-toolbar>
 
         <q-tabs v-model="tab">
-          <q-tab name="images" label="Images" />
-          <q-tab name="videos" label="Videos" />
-          <q-tab name="articles" label="Articles" />
+          <q-route-tab name="inicio" label="Inicio" to="/" />
+          <q-route-tab name="servicios" label="Servicios" to="/services" />
+          <q-route-tab name="sobreNosotros" label="Sobre Nosotros" to="/aboutUs" />
+          <q-route-tab name="contactanos" label="Contactanos" to="/contactUs" />
         </q-tabs>
       </q-header>
 </template>
@@ -22,5 +20,5 @@
 <script setup>
 import { ref } from 'vue'
 
-const tab = ref('images')
+const tab = ref('inicio')
 </script>
