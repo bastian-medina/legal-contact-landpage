@@ -24,7 +24,7 @@
                 </q-card-section>
 
                 <q-card-actions vertical align="center">
-                    <q-btn push color="primary" text-color="white" :label="item.buttonCard" />
+                    <q-btn push style="background-color: #c86b85;" text-color="white" :label="item.buttonCard" />
                 </q-card-actions>
             </q-card>
         </q-intersection>
