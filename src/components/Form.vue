@@ -1,9 +1,9 @@
 <template>
-      <div ref="myListRef" class="row justify-center q-gutter-sm">
+      <div ref="myListRef" class="row justify-right q-gutter-sm">
 
-        <q-page class="column items-center justify-center">
+        <q-page class="column items-right justify-center">
             <q-card class="create-account-card">
-            <q-form>
+            <div>
 
                 <q-card-section class="row justify-center">
                     <div class="text-h6">Correo de contacto</div>
@@ -32,15 +32,8 @@
 
                     <q-input filled v-model="email" type="email" suffix="@gmail.com"></q-input>
 
-                    <q-input
-                        label="Celular"
-                        mask="(+56#) #### - ####"
-                        fill-mask
-                        filled
-                        hint="(+56#) #### - ####"
-                    ></q-input>
 
-                    <h7 style="margin-top: 40px;">Mensaje</h7>
+                    <h7 style="margin-top: 40px;">Mensaje:</h7>
                     <q-editor
                     v-model="message"
                     :definitions="{
@@ -54,7 +47,7 @@
                     <q-btn flat>Cancelar</q-btn>
                     <q-btn color="primary" type="submit">Enviar</q-btn>
                 </q-card-actions>
-            </q-form>
+            </div>
             </q-card>
         </q-page>
 
