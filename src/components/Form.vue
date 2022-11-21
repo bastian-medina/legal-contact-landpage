@@ -34,18 +34,18 @@
 
                     <q-input
                         label="Celular"
-                        mask="(+56#) ### - ####"
+                        mask="(+56#) #### - ####"
                         fill-mask
                         filled
-                        hint="(+56#) ### - ####"
+                        hint="(+56#) #### - ####"
                     ></q-input>
 
+                    <h7 style="margin-top: 40px;">Mensaje</h7>
                     <q-editor
                     v-model="message"
                     :definitions="{
                         bold: {label: 'Bold', icon: null, tip: 'My bold tooltip'}
                     }"
-                    style="margin-top: 40px;"
                     />
 
                 </q-card-section>
