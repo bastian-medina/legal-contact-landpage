@@ -24,7 +24,7 @@
                         transition-show="jump-up"
                         transition-hide="jump-up"
                         filled
-                        v-model="model"
+                        v-model="select"
                         :options="options"
                     />
 
@@ -34,12 +34,7 @@
 
 
                     <h7 style="margin-top: 40px;">Mensaje:</h7>
-                    <q-editor
-                    v-model="message"
-                    :definitions="{
-                        bold: {label: 'Bold', icon: null, tip: 'My bold tooltip'}
-                    }"
-                    />
+                    <q-editor v-model="message"/>
 
                 </q-card-section>
 
@@ -58,6 +53,7 @@
 import { ref } from 'vue'
 
 const message = ref('')
+const select = ref('')
 const options = ref([
         'Defensa Penal', 'Juicios de Familia', 'Juicios Laborales', 'Juicios Civiles', 'Juicios de Policia Local',
         'Defensa de consumidores', 'Tramitación de Divorcios', 'Constitución de Sociedades', 'Escrituras Públicas y Privadas'
